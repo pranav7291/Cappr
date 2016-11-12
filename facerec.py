@@ -111,14 +111,14 @@ for line in lines:
     result = processRequest( json, data, headers, params,_url_accent )
     tempcap=[]
     tempcap.append(line)
-    tempcap.append( result['color']['accentColor'])
+    tempcap.append( result['color']['dominantColorForeground'])
     cap.append(tempcap)
 
 print cap
 
 
 # Load raw image file into memory
-pathToFileInDisk = r'C:\Users\prana\Documents\UB\job\Ceevee10\images\profilepic.jpg'
+pathToFileInDisk = r'C:\Users\Saumitra\Desktop\c.jpg'
 with open(pathToFileInDisk, 'rb') as f:
     data = f.read()
 
